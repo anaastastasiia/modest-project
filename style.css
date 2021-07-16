@@ -43,6 +43,7 @@
     padding: 8px 10px;
     color: #ffffff;
     text-transform: uppercase;
+    border: 1px solid transparent;
 }
 .menu a:hover {
     border: 1px solid white;
