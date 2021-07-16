@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    background-color: #1d2126;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 80px;
+}
+.row{
+    display: flex;
+    flex-wrap:wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.logo{
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+    height: 80px;
+    /* line-height: 80px; */
+}
+.menu{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Open Sans',  sans-serif;
+    height: 80px;
+    margin-top: 0;
+    align-items: center;
+
+}
+.menu li{
+    list-style: none;
+}
+.menu a{
+    text-decoration: none;
+    text-align: center;
+    justify-content: space-between;
+    font-size: 14px;
+    padding: 8px 10px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.menu a:hover {
+    border: 1px solid white;
+    border-radius: 5px;
+}
+#menu-btn{
+    border: 1px solid #23b7a3;
+    color: #23b7a3;
+    border-radius: 5px;
+}
+
+[class*="col-"]{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.col-xs-1{
+    flex:0 0 8.33333%;
+    max-width: 8.33333%;
+}
+.col-xs-2{
+    flex:0 0 8.33333%;
+    max-width: 8.33333%;
+}
+.col-xs-3{
+    flex:0 0 8.33333%;
+    max-width: 8.33333%;
+}
+.col-xs-4{
+    flex:0 0 8.33333%;
+    max-width: 8.33333%;
+}
+.col-xs-5{
+    flex:0 0 8.33333%;
+    max-width: 8.33333%;
+}
+.col-xs-6{
+    flex:0 0 8.33333%;
+    max-width: 8.33333%;
+}
+.col-xs-7{
+    flex:0 0 8.33333%;
+    max-width: 8.33333%;
+}
+.col-xs-8{
+    flex:0 0 8.33333%;
+    max-width: 8.33333%;
+}
+.col-xs-9{
+    flex:0 0 8.33333%;
+    max-width: 8.33333%;
+}
+.col-xs-10{
+    flex:0 0 8.33333%;
+    max-width: 8.33333%;
+}
+.col-xs-11{
+    flex:0 0 8.33333%;
+    max-width: 8.33333%;
+}
+.col-xs-12{
+    flex:0 0 8.33333%;
+    max-width: 8.33333%;
+}
+.col-xs-12 {
+    flex:0 0 100%;
+    max-width: 100%; 
+}
+/*tablet*/
+@media(min-width:768px){
+    .container{
+        max-width: 720px;
+    }
+    .col-sm-3 {
+        flex:0 0 25%;
+        max-width: 25%; 
+    }
+    .col-sm-7 {
+        flex:0 0 58.33333%;
+        max-width: 58.33333%; 
+    }
+    .col-sm-2 {
+        flex:0 0 16.66667%;
+        max-width: 16.6667%; 
+    }
+}
+/*laptop*/
+@media(min-width:992px){
+    .container{
+        max-width: 960px;
+    }
+}
+@media(min-width:1200px){
+    .container{
+        max-width: 100%;
+    }
+}
+@media(max-width:767px){
+    .col-xs-hidden {
+        display:none;
+    }
+}
